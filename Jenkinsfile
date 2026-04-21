@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/ananyasanu622-dot/Maven_pro.git'
+                git branch: 'main', url: 'https://github.com/msaishwarya37-netizen/mav.git'
             }
         }
         stage('Build') {
