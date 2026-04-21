@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven3'
-        jdk 'JDK17'
+        maven 'Maven_3.9'
+        jdk 'Java17'
     }
 
     stages {
@@ -29,15 +29,6 @@ pipeline {
             steps {
                 sh 'mvn package'
             }
-        }
-    }
-
-    post {
-        success {
-            echo 'Build completed successfully!'
-        }
-        failure {
-            echo 'Build failed!'
         }
     }
 }
